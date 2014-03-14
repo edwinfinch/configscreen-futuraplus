@@ -15,6 +15,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	<h2>
 		Celcius or Fahrenheit
 	</h2>
+	<h3><i>
+		Choose your preferred temperature conversion
+	</h3></i>
 
 	<ul>
 		<li>
@@ -26,10 +29,25 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		<h2>
 			Theme
 		</h2>
+		<h3><i>
+			Black box on top or bottom
+		</i></h3>
 		<li>
 			<select id="theme" data-type="int">
 				<option value="0">Normal (default)</option>
 				<option value="1">Inverted</option>
+			</select>
+		</li>
+		<h2>
+			Battery saving mode
+		</h2>
+		<h3><i>
+			Turns off animations, slows weather update interval, etc.
+		</i></h3>
+		<li>
+			<select id="batterysave" data-type="int">
+				<option value="0">Off (default)</option>
+				<option value="1">On</option>
 			</select>
 		</li>
 	</ul>
