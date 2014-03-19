@@ -84,14 +84,29 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 			Order of Elements
 		</h2>
 		<li>
-			<select id="order" data-type="int">
-				<option value="4">Right (default)</option>
+			<select id="weatherorder" data-type="int">
+				<option value="6">Weather: Right (default)</option>
+				<option value="5">Middle</option>
+				<option value="4">Left</option>
+			</select>
+		</li>
+		<li>
+			<select id="bluetoothorder" data-type="int">
+				<option value="5">Bluetooth: Middle (default)</option>
+				<option value="6">Right</option>
+				<option value="4">Left</option>
+			</select>
+		</li>
+		<li>
+			<select id="batteryorder" data-type="int">
+				<option value="4">Battery: Left (default)</option>
 				<option value="5">Middle</option>
 				<option value="6">Left</option>
 			</select>
 		</li>
 		<h3><i>
-			Puts the weather element in either of the 3 slots, effectively re-organizing bluetooth and battery.
+			Re-order different elements within the watchface. Make sure that there is one on the right,
+			one on the left, and one in the middle so they don't overlap.
 		</i></h3><br>
 		<h2>
 			No Version Upon Boot
@@ -104,6 +119,49 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		</li>
 		<h3><i>
 			Disables the "Version: X.X.X" showing up briefly (4 seconds) at the bottom of the screen.
+		</i></h3><br>
+		<h2>
+			Bluetooth Reconnected/Disconnected Warning
+		</h2>
+		<li>
+			<select id="bluetoothconnectwarn" data-type="int">
+				<option value="5">Disconnect warning: Enabled (default)</option>
+				<option value="4">Disabled</option>
+			</select>
+		</li>
+		<li>
+			<select id="bluetoothdisconnectwarn" data-type="int">
+				<option value="5">Disconnect warning: Enabled (default)</option>
+				<option value="4">Disabled</option>
+			</select>
+		</li>
+		<h3><i>
+			Disables the "Bluetooth [re/dis]connected" showing up briefly (4 seconds) at the bottom of the screen,
+			as well as the vibration associated with it.
+		</i></h3><br>
+		<h2>
+			Hide Different Elements
+		</h2>
+		<li>
+			<select id="hidebattery" data-type="int">
+				<option value="4">Hide battery: Disabled (default)</option>
+				<option value="5">Enabled</option>
+			</select>
+		</li>
+		<li>
+			<select id="hideweather" data-type="int">
+				<option value="4">Hide weather: Disabled (default)</option>
+				<option value="5">Enabled</option>
+			</select>
+		</li>
+		<li>
+			<select id="hidebluetooth" data-type="int">
+				<option value="4">Hide bluetooth: Disabled (default)</option>
+				<option value="5">Enabled</option>
+			</select>
+		</li>
+		<h3><i>
+			Optional hiding of elements (watch battery, weather, and bluetooth) within the watchface.
 		</i></h3><br>
 	</ul>
 
